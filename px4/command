@@ -1,0 +1,8 @@
+
+ocamlfind ocamlopt -linkpkg -package cil inliner.ml main.ml -o testml
+./testml ekf_att_pos_estimator_main_mod.c --out px4 &> log_px4
+python parsing.py px4 px4_fin
+mv px4_fin px4_fin.c
+frama-c -slevel 100 -val -cpp-command "gcc -C -E -I include/ -I/usr/share/frama-c" px4_fin.c &> px4
+
+

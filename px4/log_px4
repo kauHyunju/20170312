@@ -1,0 +1,343 @@
+Doing inlining for usleep
+Doing inlining for orb_publish
+Doing inlining for LowPassFilter2p_constructor
+Doing inlining for LowPassFilter2p_get_cutoff_freq
+Doing inlining for LowPassFilter2p_set_cutoff_frequency
+Doing inlining for LowPassFilter2p_apply
+Doing inlining for LowPassFilter2p_reset
+Doing inlining for AttitudePositionEstimatorEKF_constructor
+Checking whether to inline parameters_update
+Doing inlining for AttitudePositionEstimatorEKF_destroy
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for AttitudePositionEstimatorEKF_destroy
+Doing inlining for AttitudePositionEstimatorEKF_enable_logging
+Doing inlining for AttitudePositionEstimatorEKF_parameters_update
+Doing inlining for AttitudePositionEstimatorEKF_vehicle_status_poll
+Doing inlining for AttitudePositionEstimatorEKF_control_update
+Doing inlining for AttitudePositionEstimatorEKF_check_filter_state
+Checking whether to inline nondet_int
+Checking whether to inline memset
+Checking whether to inline AttPosEKF_GetFilterState
+Checking whether to inline nondet_int
+Checking whether to inline orb_publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for AttitudePositionEstimatorEKF_check_filter_state
+Checking whether to inline nondet_int
+Checking whether to inline memset
+Checking whether to inline AttPosEKF_GetFilterState
+Checking whether to inline nondet_int
+Doing inlining for AttitudePositionEstimatorEKF_task_main_trampoline
+Doing inlining for AttitudePositionEstimatorEKF_task_main
+Checking whether to inline AttitudePositionEstimatorEKF_constructor
+Checking whether to inline malloc
+Checking whether to inline AttPosEKF_constructor
+Checking whether to inline malloc
+Checking whether to inline PX4_ERR
+Checking whether to inline parameters_update
+Checking whether to inline rand
+Checking whether to inline px4_poll
+Checking whether to inline parameters_update
+Checking whether to inline AttitudePositionEstimatorEKF_vehicle_status_poll
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline AttitudePositionEstimatorEKF_pollData
+Checking whether to inline AttitudePositionEstimatorEKF_check_filter_state
+Checking whether to inline AttitudePositionEstimatorEKF_publishAttitude
+Checking whether to inline AttitudePositionEstimatorEKF_publishLocalPosition
+Checking whether to inline AttitudePositionEstimatorEKF_publishGlobalPosition
+Checking whether to inline AttitudePositionEstimatorEKF_publishWindEstimate
+Doing inlining for AttitudePositionEstimatorEKF_task_main
+Checking whether to inline AttitudePositionEstimatorEKF_constructor
+Checking whether to inline malloc
+Checking whether to inline AttPosEKF_constructor
+Checking whether to inline malloc
+Checking whether to inline PX4_ERR
+Checking whether to inline parameters_update
+Checking whether to inline rand
+Checking whether to inline px4_poll
+Checking whether to inline parameters_update
+Checking whether to inline AttitudePositionEstimatorEKF_vehicle_status_poll
+Checking whether to inline AttitudePositionEstimatorEKF_pollData
+Checking whether to inline AttitudePositionEstimatorEKF_check_filter_state
+Checking whether to inline AttitudePositionEstimatorEKF_publishAttitude
+Checking whether to inline AttitudePositionEstimatorEKF_publishLocalPosition
+Checking whether to inline AttitudePositionEstimatorEKF_publishGlobalPosition
+Checking whether to inline AttitudePositionEstimatorEKF_publishWindEstimate
+Doing inlining for AttitudePositionEstimatorEKF_initReferencePosition
+Doing inlining for AttitudePositionEstimatorEKF_initializeGPS
+Checking whether to inline get_mag_declination
+Checking whether to inline radians
+Doing inlining for AttitudePositionEstimatorEKF_publishAttitude
+Checking whether to inline nondet_int
+Checking whether to inline orb_publish
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline orb_publish
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline orb_publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for AttitudePositionEstimatorEKF_publishAttitude
+Checking whether to inline nondet_int
+Doing inlining for AttitudePositionEstimatorEKF_publishLocalPosition
+Checking whether to inline nondet_int
+Checking whether to inline orb_publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for AttitudePositionEstimatorEKF_publishLocalPosition
+Checking whether to inline nondet_int
+Doing inlining for AttitudePositionEstimatorEKF_publishGlobalPosition
+Checking whether to inline nondet_int
+Checking whether to inline orb_publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for AttitudePositionEstimatorEKF_publishGlobalPosition
+Checking whether to inline nondet_int
+Doing inlining for AttitudePositionEstimatorEKF_publishWindEstimate
+Checking whether to inline nondet_int
+Checking whether to inline orb_publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for AttitudePositionEstimatorEKF_publishWindEstimate
+Checking whether to inline nondet_int
+Doing inlining for AttitudePositionEstimatorEKF_updateSensorFusion
+Doing inlining for AttitudePositionEstimatorEKF_start
+Doing inlining for AttitudePositionEstimatorEKF_print_status
+Doing inlining for AttitudePositionEstimatorEKF_pollData
+Doing inlining for AttitudePositionEstimatorEKF_trip_nan
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline usleep
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline AttitudePositionEstimatorEKF_print_status
+Doing inlining for AttitudePositionEstimatorEKF_trip_nan
+Checking whether to inline AttitudePositionEstimatorEKF_print_status
+Doing inlining for AttitudePositionEstimatorEKF_task_running
+Doing inlining for ekf_att_pos_estimator_main
+Doing inlining for main
+Checking whether to inline malloc
+Checking whether to inline AttitudePositionEstimatorEKF_task_main
+Checking whether to inline free
+Checking whether to inline free
+inlineTable: usleep
+inlineTable: orb_publish
+inlineTable: LowPassFilter2p_constructor
+inlineTable: LowPassFilter2p_get_cutoff_freq
+inlineTable: LowPassFilter2p_set_cutoff_frequency
+inlineTable: LowPassFilter2p_apply
+inlineTable: LowPassFilter2p_reset
+inlineTable: AttitudePositionEstimatorEKF_constructor
+inlineTable: AttitudePositionEstimatorEKF_destroy
+inlineTable: AttitudePositionEstimatorEKF_enable_logging
+inlineTable: AttitudePositionEstimatorEKF_parameters_update
+inlineTable: AttitudePositionEstimatorEKF_vehicle_status_poll
+inlineTable: AttitudePositionEstimatorEKF_control_update
+inlineTable: AttitudePositionEstimatorEKF_check_filter_state
+inlineTable: AttitudePositionEstimatorEKF_task_main_trampoline
+inlineTable: AttitudePositionEstimatorEKF_task_main
+inlineTable: AttitudePositionEstimatorEKF_initReferencePosition
+inlineTable: AttitudePositionEstimatorEKF_initializeGPS
+inlineTable: AttitudePositionEstimatorEKF_publishAttitude
+inlineTable: AttitudePositionEstimatorEKF_publishLocalPosition
+inlineTable: AttitudePositionEstimatorEKF_publishGlobalPosition
+inlineTable: AttitudePositionEstimatorEKF_publishWindEstimate
+inlineTable: AttitudePositionEstimatorEKF_updateSensorFusion
+inlineTable: AttitudePositionEstimatorEKF_start
+inlineTable: AttitudePositionEstimatorEKF_print_status
+inlineTable: AttitudePositionEstimatorEKF_pollData
+inlineTable: AttitudePositionEstimatorEKF_trip_nan
+inlineTable: AttitudePositionEstimatorEKF_task_running
+inlineTable: ekf_att_pos_estimator_main
+inlineTable: main
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec4
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec3
+????????
+vvrbl: topic_name
+hjhjjhtopic_name
+v'.vname: topic_name14
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta12
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size15
+vvrbl: st_size
+hjhjjhst_size
+v'.vname: st_size13
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec16
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec15
+????????
+vvrbl: topic_name
+hjhjjhtopic_name
+v'.vname: topic_name8
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta6
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size9
+vvrbl: st_size
+hjhjjhst_size
+v'.vname: st_size7
+????????
+vvrbl: topic_name
+hjhjjhtopic_name
+v'.vname: topic_name12
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta10
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size13
+vvrbl: st_size
+hjhjjhst_size
+v'.vname: st_size11
+????????
+vvrbl: topic_name
+hjhjjhtopic_name
+v'.vname: topic_name16
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta14
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size17
+vvrbl: st_size
+hjhjjhst_size
+v'.vname: st_size15
+????????
+vvrbl: topic_name
+hjhjjhtopic_name
+v'.vname: topic_name5
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta3
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size6
+vvrbl: st_size
+hjhjjhst_size
+v'.vname: st_size4
+????????
+vvrbl: topic_name
+hjhjjhtopic_name
+v'.vname: topic_name5
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta3
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size6
+vvrbl: st_size
+hjhjjhst_size
+v'.vname: st_size4
+????????
+vvrbl: topic_name
+hjhjjhtopic_name
+v'.vname: topic_name5
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta3
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size6
+vvrbl: st_size
+hjhjjhst_size
+v'.vname: st_size4
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec5
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec4
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec7
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec6
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec9
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec8
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec11
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec10
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec13
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec12
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec15
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec14
+????????
+vvrbl: sleep_usec
+hjhjjhsleep_usec
+v'.vname: sleep_usec17
+vvrbl: usec
+hjhjjhusec
+v'.vname: usec16

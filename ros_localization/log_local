@@ -1,0 +1,132 @@
+test_ekf_localization_node_interfaces.c:1863: Warning: Cannot inline function orb_publish because we cannot find its definition
+test_ekf_localization_node_interfaces.c:1863: Warning: Cannot inline function usleep because we cannot find its definition
+Doing inlining for mystrcmp
+Doing inlining for nh_serviceClient
+Doing inlining for nh_advertise
+Checking whether to inline malloc
+Doing inlining for nh_subscribe
+Checking whether to inline malloc
+Doing inlining for Duration_sleep
+Doing inlining for loopRate_sleep
+Doing inlining for publish
+Doing inlining for resetFilter
+Doing inlining for OdomPoseBasicIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline free
+Checking whether to inline resetFilter
+Doing inlining for OdomTwistBasicIOTEST
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for PoseBasicIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for TwistBasicIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for ImuPoseBasicIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for ImuTwistBasicIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for ImuAccBasicIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for OdomDifferentialIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline Duration_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for PoseDifferentialIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline Duration_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for ImuDifferentialIOTEST
+Checking whether to inline malloc
+Checking whether to inline publish
+Checking whether to inline publish
+Checking whether to inline Duration_sleep
+Checking whether to inline publish
+Checking whether to inline Duration_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Checking whether to inline publish
+Checking whether to inline loopRate_sleep
+Doing inlining for main
+Checking whether to inline OdomPoseBasicIOTEST
+Checking whether to inline OdomTwistBasicIOTEST
+Checking whether to inline PoseBasicIOTEST
+Checking whether to inline TwistBasicIOTEST
+Checking whether to inline ImuPoseBasicIOTEST
+Checking whether to inline ImuTwistBasicIOTEST
+Checking whether to inline ImuAccBasicIOTEST
+Checking whether to inline OdomDifferentialIOTEST
+Checking whether to inline PoseDifferentialIOTEST
+Checking whether to inline ImuDifferentialIOTEST
+inlineTable: mystrcmp
+inlineTable: nh_serviceClient
+inlineTable: nh_advertise
+inlineTable: nh_subscribe
+inlineTable: Duration_sleep
+inlineTable: loopRate_sleep
+inlineTable: publish
+inlineTable: resetFilter
+inlineTable: OdomPoseBasicIOTEST
+inlineTable: OdomTwistBasicIOTEST
+inlineTable: PoseBasicIOTEST
+inlineTable: TwistBasicIOTEST
+inlineTable: ImuPoseBasicIOTEST
+inlineTable: ImuTwistBasicIOTEST
+inlineTable: ImuAccBasicIOTEST
+inlineTable: OdomDifferentialIOTEST
+inlineTable: PoseDifferentialIOTEST
+inlineTable: ImuDifferentialIOTEST
+inlineTable: main

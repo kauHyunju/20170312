@@ -1,0 +1,188 @@
+Doing inlining for mystrcmp
+Doing inlining for nh_serviceClient
+Doing inlining for nh_advertise
+Checking whether to inline malloc
+Doing inlining for nh_subscribe
+Checking whether to inline malloc
+Doing inlining for Duration_sleep
+Doing inlining for loopRate_sleep
+Doing inlining for publish
+Doing inlining for adjustSteering
+Checking whether to inline publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for adjustSteering
+Doing inlining for accel_reset
+Doing inlining for accel_adjust
+Doing inlining for halt
+Checking whether to inline publish
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline publish
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for halt
+Doing inlining for monitorHardware
+Doing inlining for validateTarget
+Checking whether to inline fabs
+Checking whether to inline fabs
+Checking whether to inline fabs
+Checking whether to inline fabs
+Checking whether to inline fabs
+Checking whether to inline fabs
+Checking whether to inline fabs
+Checking whether to inline fabs
+Checking whether to inline fabs
+Doing inlining for processCarDrive
+Doing inlining for processCarCommand
+Doing inlining for PilotNodeConstructor
+Checking whether to inline processCarDrive
+Doing inlining for speedControl
+Checking whether to inline publish
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline halt
+Checking whether to inline halt
+Checking whether to inline publish
+Done inlining
+vfunc start
+Patching gotos
+Checking whether to inline halt
+Doing inlining for speedControl
+Checking whether to inline halt
+Checking whether to inline halt
+Checking whether to inline halt
+Doing inlining for PilotNode_spin
+Checking whether to inline monitorHardware
+Checking whether to inline speedControl
+Checking whether to inline adjustSteering
+Checking whether to inline publish
+Done inlining
+vfunc start
+Patching gotos
+Doing inlining for PilotNode_spin
+Checking whether to inline monitorHardware
+Checking whether to inline speedControl
+Checking whether to inline adjustSteering
+Doing inlining for main
+Checking whether to inline malloc
+Checking whether to inline PilotNodeConstructor
+Checking whether to inline PilotNode_spin
+inlineTable: mystrcmp
+inlineTable: nh_serviceClient
+inlineTable: nh_advertise
+inlineTable: nh_subscribe
+inlineTable: Duration_sleep
+inlineTable: loopRate_sleep
+inlineTable: publish
+inlineTable: adjustSteering
+inlineTable: accel_reset
+inlineTable: accel_adjust
+inlineTable: halt
+inlineTable: monitorHardware
+inlineTable: validateTarget
+inlineTable: processCarDrive
+inlineTable: processCarCommand
+inlineTable: PilotNodeConstructor
+inlineTable: speedControl
+inlineTable: PilotNode_spin
+inlineTable: main
+????????
+vvrbl: topic
+hjhjjhtopic
+v'.vname: topic6
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta3
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size7
+vvrbl: size
+hjhjjhsize
+v'.vname: size4
+????????
+vvrbl: topic
+hjhjjhtopic
+v'.vname: topic4
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta1
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size5
+vvrbl: size
+hjhjjhsize
+v'.vname: size2
+????????
+vvrbl: topic
+hjhjjhtopic
+v'.vname: topic9
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta6
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size10
+vvrbl: size
+hjhjjhsize
+v'.vname: size7
+????????
+vvrbl: topic
+hjhjjhtopic
+v'.vname: topic14
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta11
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size15
+vvrbl: size
+hjhjjhsize
+v'.vname: size12
+????????
+vvrbl: topic
+hjhjjhtopic
+v'.vname: topic5
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta2
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size6
+vvrbl: size
+hjhjjhsize
+v'.vname: size3
+????????
+vvrbl: topic
+hjhjjhtopic
+v'.vname: topic10
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta7
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size11
+vvrbl: size
+hjhjjhsize
+v'.vname: size8
+????????
+vvrbl: topic
+hjhjjhtopic
+v'.vname: topic5
+vvrbl: meta
+hjhjjhmeta
+v'.vname: meta2
+vvrbl: topic_size
+hjhjjhtopic_size
+v'.vname: topic_size6
+vvrbl: size
+hjhjjhsize
+v'.vname: size3

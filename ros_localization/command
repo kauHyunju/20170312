@@ -1,0 +1,5 @@
+ocamlfind ocamlopt -linkpkg -package cil inliner.ml main.ml -o testml
+./testml test_ekf_localization_node_interfaces.c --out local &> log_local
+python parsing.py local local_fin
+mv local_fin local_fin.c
+frama-c -slevel 100 -val -cpp-command "gcc -C -E -I include/ -I/usr/share/frama-c" local_fin.c &> ros_local

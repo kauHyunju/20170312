@@ -1,0 +1,944 @@
+[kernel] Parsing FRAMAC_SHARE/libc/__fc_builtin_for_normalization.i (no preprocessing)
+[kernel] warning: your preprocessor is not known to handle option ` -nostdinc'. If pre-processing fails because of it, please add -no-cpp-gnu-like option to Frama-C's command-line. If you do not want to see this warning again, use explicitely -cpp-gnu-like option.
+[kernel] warning: your preprocessor is not known to handle option `-dD'. If pre-processing fails because of it, please add -no-cpp-gnu-like option to Frama-C's command-line. If you do not want to see this warning again, use explicitely -cpp-gnu-like option.
+[kernel] Parsing px4_fin.c (with preprocessing)
+[kernel] warning: trying to preprocess annotation with an unknown preprocessor.
+px4_fin.c:704:[kernel] warning: Floating-point constant 0.01f is not represented exactly. Will use 0x1.47ae140000000p-7. See documentation for option -warn-decimal-float
+[value] Analyzing a complete application starting at main
+[value] Computing initial state
+[value] Initial state computed
+[value] Values of globals at initialization
+  rc ∈ {10.}
+  FILTER_INIT_DELAY ∈ {1000000}
+  POS_RESET_THRESHOLD ∈ {5.}
+  MAG_SWITCH_HYSTERESIS ∈ {10}
+  GYRO_SWITCH_HYSTERESIS ∈ {5}
+  ACCEL_SWITCH_HYSTERESIS ∈ {5}
+  ERROR ∈ {-1}
+  _aekf ∈ {0}
+  _lpf ∈ {0}
+  _ekf ∈ {0}
+  _vec3f ∈ {0}
+  g_estimator ∈ {0}
+[value] computing for function malloc <- main.
+        Called from px4_fin.c:803.
+px4_fin.c:803:[kernel] warning: Neither code nor specification for function malloc, generating default assigns from the prototype
+[value] using specification for function malloc
+[value] Done for function malloc
+[value] computing for function AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:804.
+[value] computing for function AttitudePositionEstimatorEKF_constructor <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:461.
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_constructor <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:313.
+px4_fin.c:313:[kernel] warning: Neither code nor specification for function parameters_update, generating default assigns from the prototype
+[value] using specification for function parameters_update
+[value] Done for function parameters_update
+[value] Recording results for AttitudePositionEstimatorEKF_constructor
+[value] Done for function AttitudePositionEstimatorEKF_constructor
+px4_fin.c:462:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function malloc <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:462.
+[value] Done for function malloc
+[value] computing for function AttPosEKF_constructor <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:463.
+px4_fin.c:463:[kernel] warning: Neither code nor specification for function AttPosEKF_constructor, generating default assigns from the prototype
+[value] using specification for function AttPosEKF_constructor
+px4_fin.c:463:[value] warning: Completely invalid destination for assigns clause *x_0. Ignoring.
+[value] Done for function AttPosEKF_constructor
+[value] computing for function malloc <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:464.
+[value] Done for function malloc
+[value] computing for function PX4_ERR <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:466.
+px4_fin.c:466:[kernel] warning: Neither code nor specification for function PX4_ERR, generating default assigns from the prototype
+[value] using specification for function PX4_ERR
+[value] Done for function PX4_ERR
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:469.
+[value] Done for function parameters_update
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+px4_fin.c:474:[kernel] warning: Neither code nor specification for function rand, generating default assigns from the prototype
+[value] using specification for function rand
+[value] Done for function rand
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[kernel] warning: division by zero: assert sizeof(fds[0]) ≢ 0;
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+px4_fin.c:480:[kernel] warning: Neither code nor specification for function px4_poll, generating default assigns from the prototype
+[value] using specification for function px4_poll
+[value] Done for function px4_poll
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+px4_fin.c:391:[kernel] warning: Neither code nor specification for function nondet_int, generating default assigns from the prototype
+[value] using specification for function nondet_int
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+px4_fin.c:411:[kernel] warning: Neither code nor specification for function memset, generating default assigns from the prototype
+[value] using specification for function memset
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+px4_fin.c:412:[kernel] warning: Neither code nor specification for function AttPosEKF_GetFilterState, generating default assigns from the prototype
+[value] using specification for function AttPosEKF_GetFilterState
+px4_fin.c:412:[value] warning: Completely invalid destination for assigns clause *x_0. Ignoring.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:501.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:565.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishAttitude
+[value] Done for function AttitudePositionEstimatorEKF_publishAttitude
+[value] computing for function AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:502.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:605.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishLocalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishLocalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:503.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:629.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:504.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:653.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishWindEstimate
+[value] Done for function AttitudePositionEstimatorEKF_publishWindEstimate
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:501.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:565.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishAttitude
+[value] Done for function AttitudePositionEstimatorEKF_publishAttitude
+[value] computing for function AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:502.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:605.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishLocalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishLocalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:503.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:629.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:504.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:653.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishWindEstimate
+[value] Done for function AttitudePositionEstimatorEKF_publishWindEstimate
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:501.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:565.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishAttitude
+[value] Done for function AttitudePositionEstimatorEKF_publishAttitude
+[value] computing for function AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:502.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:605.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishLocalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishLocalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:503.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:629.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:504.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:653.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishWindEstimate
+[value] Done for function AttitudePositionEstimatorEKF_publishWindEstimate
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:501.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:565.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishAttitude
+[value] Done for function AttitudePositionEstimatorEKF_publishAttitude
+[value] computing for function AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:502.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:605.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishLocalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishLocalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:503.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:629.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:504.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:653.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishWindEstimate
+[value] Done for function AttitudePositionEstimatorEKF_publishWindEstimate
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+[value] computing for function rand <- AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:474.
+[value] Done for function rand
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+px4_fin.c:480:[value] cannot interpret sizeof or alignof (incomplete type)
+[value] computing for function px4_poll <- AttitudePositionEstimatorEKF_task_main <- 
+                                main.
+        Called from px4_fin.c:480.
+[value] Done for function px4_poll
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function parameters_update <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:482.
+[value] Done for function parameters_update
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_vehicle_status_poll <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:484.
+[value] Recording results for AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] Done for function AttitudePositionEstimatorEKF_vehicle_status_poll
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_pollData <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:491.
+[value] Recording results for AttitudePositionEstimatorEKF_pollData
+[value] Done for function AttitudePositionEstimatorEKF_pollData
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:495.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:391.
+[value] Done for function nondet_int
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function memset <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:411.
+[value] Done for function memset
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function AttPosEKF_GetFilterState <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:412.
+[value] Done for function AttPosEKF_GetFilterState
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_check_filter_state <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:414.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_check_filter_state
+[value] Done for function AttitudePositionEstimatorEKF_check_filter_state
+[value] computing for function AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:501.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishAttitude <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:565.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishAttitude
+[value] Done for function AttitudePositionEstimatorEKF_publishAttitude
+[value] computing for function AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:502.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishLocalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:605.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishLocalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishLocalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:503.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishGlobalPosition <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:629.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] Done for function AttitudePositionEstimatorEKF_publishGlobalPosition
+[value] computing for function AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:504.
+[value] computing for function nondet_int <- 
+                                AttitudePositionEstimatorEKF_publishWindEstimate <- 
+                                AttitudePositionEstimatorEKF_task_main <- main.
+        Called from px4_fin.c:653.
+[value] Done for function nondet_int
+[value] Recording results for AttitudePositionEstimatorEKF_publishWindEstimate
+[value] Done for function AttitudePositionEstimatorEKF_publishWindEstimate
+[value] Recording results for AttitudePositionEstimatorEKF_task_main
+[value] Done for function AttitudePositionEstimatorEKF_task_main
+[value] computing for function free <- main.
+        Called from px4_fin.c:805.
+px4_fin.c:805:[kernel] warning: Neither code nor specification for function free, generating default assigns from the prototype
+[value] using specification for function free
+px4_fin.c:805:[value] warning: Completely invalid destination for assigns clause *x_0. Ignoring.
+[value] Done for function free
+[value] computing for function free <- main.
+        Called from px4_fin.c:806.
+px4_fin.c:806:[value] warning: Completely invalid destination for assigns clause *x_0. Ignoring.
+[value] Done for function free
+[value] Recording results for main
+[value] done for function main
+[value] ====== VALUES COMPUTED ======
+[value] Values at end of function AttitudePositionEstimatorEKF_pollData:
+  armedUpdate ∈ {1}
+  accel_updated ∈ {1}
+  deltaT ∈ {0.00999999977648}
+  newLandData ∈ {1}
+  gps_update ∈ {1}
+[value] Values at end of function AttitudePositionEstimatorEKF_vehicle_status_poll:
+  vstatus_updated ∈ {1}
+[value] Values at end of function AttitudePositionEstimatorEKF_check_filter_state:
+  ekf_report.[bits 0 to ..] ∈ [--..--] or UNINITIALIZED
+  check ∈ {0; 1}
+  checkrand ∈ [--..--]
+  feedback[0] ∈ {0}
+          [1] ∈ {{ "NaN in states, resetting" }}
+          [2] ∈ {{ "stale sensor data, resetting" }}
+          [3] ∈ {{ "got initial position lock" }}
+          [4] ∈ {{ "excessive gyro offsets" }}
+          [5] ∈ {{ "velocity diverted, check accel config" }}
+          [6] ∈ {{ "excessive covariances" }}
+          [7] ∈ {{ "unknown condition, resetting" }}
+  warn_index ∈ {1} or UNINITIALIZED
+  max_warn_index ∈ {8} or UNINITIALIZED
+  rep ∈ [--..--] or UNINITIALIZED
+  _estimator_status_pub_rand ∈ [--..--]
+  meta12 ∈ {{ "estimator_status" }}
+  st_size13 ∈ {260}
+  topic_name14 ∈ {{ "estimator_status" }}
+  topic_size15 ∈ {260}
+[value] Values at end of function AttitudePositionEstimatorEKF_publishAttitude:
+  i ∈ {3}
+  j ∈ {3}
+  _att_pub_rand ∈ [--..--]
+  meta6 ∈ {{ "vehicle_attitude" }}
+  st_size7 ∈ {132}
+  topic_name8 ∈ {{ "vehicle_attitude" }}
+  topic_size9 ∈ {132}
+  meta10 ∈ {{ "vehicle_attitude" }}
+  st_size11 ∈ {132}
+  topic_name12 ∈ {{ "vehicle_attitude" }}
+  topic_size13 ∈ {132}
+  meta14 ∈ {{ "estimator_status" }}
+  st_size15 ∈ {132}
+  topic_name16 ∈ {{ "estimator_status" }}
+  topic_size17 ∈ {132}
+[value] Values at end of function AttitudePositionEstimatorEKF_publishGlobalPosition:
+  _global_pos_pub_rand ∈ [--..--]
+  meta3 ∈ {{ "vehicle_global_position" }}
+  st_size4 ∈ {72}
+  topic_name5 ∈ {{ "vehicle_global_position" }}
+  topic_size6 ∈ {72}
+[value] Values at end of function AttitudePositionEstimatorEKF_publishLocalPosition:
+  _local_pos_pub_rand ∈ [--..--]
+  meta3 ∈ {{ "vehicle_local_position" }}
+  st_size4 ∈ {84}
+  topic_name5 ∈ {{ "vehicle_local_position" }}
+  topic_size6 ∈ {84}
+[value] Values at end of function AttitudePositionEstimatorEKF_publishWindEstimate:
+  _wind_pub_rand ∈ {1}
+  meta3 ∈ {{ "wind_estimate" }}
+  st_size4 ∈ {20}
+  topic_name5 ∈ {{ "wind_estimate" }}
+  topic_size6 ∈ {20}
+[value] Values at end of function AttitudePositionEstimatorEKF_constructor:
+  
+[value] Values at end of function AttitudePositionEstimatorEKF_task_main:
+  _lpf ∈ [--..--]
+  _ekf ∈ [--..--]
+  fds[bits 0 to ..] ∈ [--..--] or UNINITIALIZED
+  idx ∈ {0; 1; 2; 3; 4; 5} or UNINITIALIZED
+  loopcnt ∈ {-1; 0; 1} or UNINITIALIZED
+  tmp___1 ∈ [--..--] or UNINITIALIZED
+  pret ∈ [--..--] or UNINITIALIZED
+  tmp___2 ∈ [--..--] or UNINITIALIZED
+  prev_hil ∈ {1} or UNINITIALIZED
+  initVelNED[0..2] ∈ {0} or UNINITIALIZED
+  check ∈ {0; 1} or UNINITIALIZED
+  tmp___3 ∈ {0; 1} or UNINITIALIZED
+  usec15 ∈ {60000} or UNINITIALIZED
+  sleep_usec16 ∈ {60000} or UNINITIALIZED
+[value] Values at end of function main:
+  _aekf ∈ [--..--]
+  _lpf ∈ [--..--]
+  _ekf ∈ [0..4294967295]

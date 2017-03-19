@@ -1,0 +1,5 @@
+ocamlfind ocamlopt -linkpkg -package cil inliner.ml main.ml -o testml
+./testml pilot.c --out pilot &> log_pilot
+python parsing.py pilot pilot_fin
+mv pilot_fin pilot_fin.c
+frama-c -slevel 100 -val -cpp-command "gcc -C -E -I include/ -I/usr/share/frama-c" pilot_fin.c &> pilot

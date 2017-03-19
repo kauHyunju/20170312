@@ -1,0 +1,117 @@
+[kernel] Parsing FRAMAC_SHARE/libc/__fc_builtin_for_normalization.i (no preprocessing)
+[kernel] warning: your preprocessor is not known to handle option ` -nostdinc'. If pre-processing fails because of it, please add -no-cpp-gnu-like option to Frama-C's command-line. If you do not want to see this warning again, use explicitely -cpp-gnu-like option.
+[kernel] warning: your preprocessor is not known to handle option `-dD'. If pre-processing fails because of it, please add -no-cpp-gnu-like option to Frama-C's command-line. If you do not want to see this warning again, use explicitely -cpp-gnu-like option.
+[kernel] Parsing pilot_fin.c (with preprocessing)
+[kernel] warning: trying to preprocess annotation with an unknown preprocessor.
+[value] Analyzing a complete application starting at main
+[value] Computing initial state
+[value] Initial state computed
+[value] Values of globals at initialization
+  DriverState ∈ {0}
+  Epsilon ∈ {0}
+  is_shifting_ ∈ {0}
+  accel_cmd_ ∈ {0}
+  car_cmd_ ∈ {0}
+  brake_ ∈ {0}
+  imu_ ∈ {0}
+  odom_ ∈ {0}
+  shifter_ ∈ {0}
+  steering_ ∈ {0}
+  throttle_ ∈ {0}
+  learning_cmd_ ∈ {0}
+  pilot_state_ ∈ {0}
+  config_ ∈ {0}
+  current_time_ ∈ {0}
+[value] computing for function malloc <- main.
+        Called from pilot_fin.c:546.
+pilot_fin.c:546:[kernel] warning: Neither code nor specification for function malloc, generating default assigns from the prototype
+[value] using specification for function malloc
+[value] Done for function malloc
+[value] computing for function PilotNodeConstructor <- main.
+        Called from pilot_fin.c:548.
+[value] computing for function processCarDrive <- PilotNodeConstructor <- main.
+        Called from pilot_fin.c:470.
+[value] Recording results for processCarDrive
+[value] Done for function processCarDrive
+[value] Recording results for PilotNodeConstructor
+[value] Done for function PilotNodeConstructor
+[value] computing for function PilotNode_spin <- main.
+        Called from pilot_fin.c:549.
+[value] computing for function monitorHardware <- PilotNode_spin <- main.
+        Called from pilot_fin.c:524.
+[value] Recording results for monitorHardware
+[value] Done for function monitorHardware
+[value] computing for function speedControl <- PilotNode_spin <- main.
+        Called from pilot_fin.c:525.
+[value] computing for function halt <- speedControl <- PilotNode_spin <- main.
+        Called from pilot_fin.c:498.
+[value] Recording results for halt
+[value] Done for function halt
+[value] computing for function halt <- speedControl <- PilotNode_spin <- main.
+        Called from pilot_fin.c:499.
+[value] Recording results for halt
+[value] Done for function halt
+[value] computing for function halt <- speedControl <- PilotNode_spin <- main.
+        Called from pilot_fin.c:509.
+[value] Recording results for halt
+[value] Done for function halt
+[value] Recording results for speedControl
+[value] Done for function speedControl
+[value] computing for function adjustSteering <- PilotNode_spin <- main.
+        Called from pilot_fin.c:526.
+[value] Recording results for adjustSteering
+[value] Done for function adjustSteering
+[value] Recording results for PilotNode_spin
+[value] Done for function PilotNode_spin
+[value] Recording results for main
+[value] done for function main
+[value] ====== VALUES COMPUTED ======
+[value] Values at end of function adjustSteering:
+  meta3 ∈ {{ "steering" }}
+  size4 ∈ {4}
+  seq5 ∈ {0}
+  topic6 ∈ {{ "steering" }}
+  topic_size7 ∈ {4}
+[value] Values at end of function halt:
+  meta1 ∈ {{ "brake" }}
+  size2 ∈ {8}
+  seq3 ∈ {0}
+  topic4 ∈ {{ "brake" }}
+  topic_size5 ∈ {8}
+  meta6 ∈ {{ "throttle" }}
+  size7 ∈ {8}
+  seq8 ∈ {0}
+  topic9 ∈ {{ "throttle" }}
+  topic_size10 ∈ {8}
+  meta11 ∈ {{ "brake" }}
+  size12 ∈ {8}
+  seq13 ∈ {0}
+  topic14 ∈ {{ "brake" }}
+  topic_size15 ∈ {8}
+[value] Values at end of function monitorHardware:
+  
+[value] Values at end of function processCarDrive:
+  
+[value] Values at end of function PilotNodeConstructor:
+  qDepth ∈ {1}
+[value] Values at end of function speedControl:
+  meta2 ∈ {{ "shifter" }}
+  size3 ∈ {4}
+  seq4 ∈ {0}
+  topic5 ∈ {{ "shifter" }}
+  topic_size6 ∈ {4}
+  meta7 ∈ {{ "shifter" }}
+  size8 ∈ {4}
+  seq9 ∈ {0}
+  topic10 ∈ {{ "shifter" }}
+  topic_size11 ∈ {4}
+[value] Values at end of function PilotNode_spin:
+  meta2 ∈ {{ "pilot_state" }}
+  size3 ∈ {108}
+  seq4 ∈ {1}
+  topic5 ∈ {{ "pilot_state" }}
+  topic_size6 ∈ {108}
+[value] Values at end of function main:
+  pstate_msg_ ∈ [--..--]
+  tmp ∈ [--..--]
+  __retres ∈ {0}
